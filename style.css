@@ -1,8 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Reference</title>
+<header class="w3-center w3-margin-bottom">
+  <h1 align="center"><b>Title</b></h1>
+  <h2 align="center"><b>Subtitle.</b></h2>
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+
+
+<ul>
+  <li><a class="active" href="#home"> Item1 </a></li>
+  <li><a href="#news"> Item2 </a></li>
+  <li><a href="#contact"> Item3 </a></li>
+  <li><a href="#about"> Item4 </a></li>
+  <li><a href="#item5"> Item5 </a></li>
+</ul>
+
+
+<p>Note: We use href="#" for test links. In a real web site this would be URLs.</p>
+
+</body>
+</html>
+
+
+Jason Li
+10:54 PM (5 minutes ago)
+to Jin
+
+
 * {
   color : black;
-  font-family: Garamond;
+  font-family: sans-serif;
   font-size: 20px;
-  padding: 25px 25px 25px 25px;
+  padding: 40px 25px 25px 40px;
+  background-color: white;
+}
+
+p {
+ border: 2px;
+ border-radius: 5px;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  font-family: helvetica;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 30px;
 }
 
 ul {
@@ -38,6 +119,23 @@ a[href$=".com"] {
 }
 
 a[href$=".html"] {
+  color: blue;
+  text-decoration: none;
+}
+
+a[href*=".com"]
+{
+  font-style: italic;
+}
+
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: purple;
+}
   color: blue;
   text-decoration: none;
 }
