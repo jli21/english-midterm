@@ -33,3 +33,26 @@ li a:hover:not(.active) {
   background-color: #4CAF50;
 }
 
+a[href$=".com"] {
+  font-style: italic;
+}
+
+a[href$=".html"] {
+  color: blue;
+  text-decoration: none;
+}
+
+a[href*=".com"]
+{
+  font-style: italic;
+}
+
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: purple;
+}
+
